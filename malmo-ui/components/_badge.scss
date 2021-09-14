@@ -1,0 +1,40 @@
+@use 'sass:math';
+
+@mixin badge($bg-color:white,$color:#000) {
+    font-size: math.div($base-font-size,1.333333333333333333);
+    font-weight: 700;
+    border-radius: math.div($base-border-radius,4.3333333333333);
+    color:$color;
+    text-decoration: none;
+    display: inline;
+    border: 0;
+    padding:math.div($base-padding,1.15384615384) math.div($base-padding,2.14285714285);
+    background-color: $bg-color;
+}
+
+.badge{
+    @include badge;
+}
+
+
+@each $key, $val in $colors {
+    @if($val != black and $val != white and $val !=#03A9F4 and $val != #FFC107){
+        .badge-#{$key}{
+            @include badge($val,white); 
+        }
+    }@else{
+        .badge-black{
+            @include badge(black,white);
+        }
+        .badge-white{
+            @include badge(white,black);
+        }
+        .badge-info{
+            @include badge(#03A9F4,black);
+
+        }
+        .badge-warning{
+            @include badge(#FFC107,black);
+        }
+    }
+}
