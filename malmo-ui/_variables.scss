@@ -1,11 +1,11 @@
 // theme colors
-$primary: #2196F3;
-$secondary: #9E9E9E;
-$error: #F44336;
-$info: #03A9F4;
-$warning:#FFC107;
-$white:#FFFFFF;
-$black:#000000;
+$primary: #2196F3 !default;
+$secondary: #9E9E9E !default;
+$error: #F44336 !default;
+$info: #03A9F4 !default;
+$warning:#FFC107 !default;
+$white:#FFFFFF !default;
+$black:#000000 !default;
 
 // color palette
 $colors:(
@@ -29,30 +29,30 @@ $colors:(
 );
 
 // spacing
-$base-padding : 0.75rem;
-$base-margin : 0.75rem;
+$base-padding : 0.75rem !default;
+$base-margin : 0.75rem !default;
 
 // borders
-$base-border-width: 1px;
-$border-width-2:2px;
-$border-width-3:3px;
-$border-width-4:4px;
-$border-width-5:5px;
+$base-border-width: 1px !default;
+$border-width-2:2px !default;
+$border-width-3:3px !default;
+$border-width-4:4px !default;
+$border-width-5:5px !default;
 
-$base-border-radius: 16px;
+$base-border-radius: 16px !default;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-$sm-box-shadow: 0.75px 2.25px 3.75px rgba(0,0,0,0.075);
-$lg-box-shadow: 1.5px 4.5px 7.5px rgba(0,0,0,0.15);
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+$sm-box-shadow: 0.75px 2.25px 3.75px rgba(0,0,0,0.075) !default;
+$lg-box-shadow: 1.5px 4.5px 7.5px rgba(0,0,0,0.15) !default;
 
 
 // font sizes
-$base-font-size: 1rem;
-$base-line-height:1.5;
-$sm-line-height:1.25;
-$lg-line-height:2;
+$base-font-size: 1rem !default;
+$base-line-height:1.5 !default;
+$sm-line-height:1.25 !default;
+$lg-line-height:2 !default;
 
 
 // grid columns
-$grid-columns:12;
+$grid-columns:12 !default;
